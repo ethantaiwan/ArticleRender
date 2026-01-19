@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from render import render_article  # ✅ 就從 render.py 匯入
+from renderer import render_article  # ✅ 就從 render.py 匯入
 
 
 logger = logging.getLogger("article_render.app")
